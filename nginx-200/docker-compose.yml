@@ -1,0 +1,14 @@
+version: "3.5"
+services:
+
+  morph:
+    container_name: morph
+    build: .
+    image: getgoetz/nginx-200
+    # volumes:
+    # - ./templates:/etc/nginx/templates
+    ports:
+      - "127.0.0.1:80:2222"
+    environment:
+      - NGINX_PORT=2222
+      - NGINX_BODY=docker_compose_morph_new

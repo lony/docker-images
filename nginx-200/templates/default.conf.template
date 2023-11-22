@@ -1,0 +1,5 @@
+server {
+    listen       ${NGINX_PORT};
+    return 200   '${NGINX_BODY}';
+    add_header   Content-Type text/plain;
+}
