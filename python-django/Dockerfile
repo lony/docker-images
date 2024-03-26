@@ -26,6 +26,7 @@ WORKDIR /usr/src/app
 
 # copying all the files to present working directory
 COPY templates/code_django/ .
+COPY templates/docker-entrypoint.sh .
 
 # installing dependency in container
 RUN pip install --no-cache-dir -r requirements.txt
@@ -42,4 +43,4 @@ USER 1000:1000
 EXPOSE 8000
 
 # running server
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+ENTRYPOINT ["./docker-entrypoint.sh"]

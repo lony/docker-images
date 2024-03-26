@@ -45,7 +45,9 @@ python manage.py runserver 8000
 ## Inspired by
 
 - https://blog.ploetzli.ch/2020/efficient-multi-stage-build-django-docker/
+  - https://pythonspeed.com/articles/gunicorn-in-docker/
 - https://testdriven.io/blog/deploying-django-to-ecs-with-terraform/
 - https://testdriven.io/blog/dockerizing-django-with-postgres-gunicorn-and-nginx/
 - https://dev.to/daiquiri_team/deploying-django-application-on-aws-with-terraform-minimal-working-setup-587g
 - https://blog.logrocket.com/dockerizing-django-app/
+- https://medium.com/@rohitkhatana/deploying-django-app-on-aws-ecs-using-docker-gunicorn-nginx-c90834f76e21
